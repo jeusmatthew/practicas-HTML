@@ -1,0 +1,60 @@
+* {
+    font-family: "roboto";
+    text-align: center;
+    transition: all 256ms;
+}
+
+body {
+    background-color: hsl(73, 72%, 85%);
+}
+
+.recuadro {
+    background-color: #d9ed92;
+    margin: auto;
+    padding: auto;
+    /* position: fixed; */
+    /* left: 30%;
+    right: 30%; */
+    width: 50%;
+    z-index: 10;
+    /* top: 50%; */
+    box-shadow: 3px 3px 0px 0px #000000;
+    height: 250px;
+}
+
+.panelJugador {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+    align-content: space-around;
+}
+
+input[type="number"] {
+    width: 150px;
+    /* height: 32px; */
+    border-radius: 4px;
+    margin: 4px;
+    padding: 4px;
+}
+
+button {
+    width: 150px;
+    background-color: hsl(110, 90%, 70%);
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* color: #fff; */
+}
+
+button:hover {
+    background-color: hsl(73, 90%, 75%);
+}
+
+button:disabled {
+    cursor: default;
+    /* background-color: #52b69a; */
+    background-color: hsl(110, 90%, 70%);
+}

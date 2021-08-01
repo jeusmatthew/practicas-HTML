@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Adivina el numero</title>
+</head>
+
+<body>
+    <h1>Adivina el numero</h1>
+    <h3>Entre 1 y 1000</h3>
+    <button onclick="iniciarJuego()" id="btnJugar">JUGAR</button>
+    <div class="recuadro">
+        <p id="tiempoRestante">Tiempo: </p>
+        <p id="turno">Turno del jugador: </p>
+        <div class="panelJugador">
+            <form action="">
+                <label for="numJugador1">Jugador 1</label>
+                <br>
+                <input type="number" name="numJugador1" id="numJugador1" disabled max="1000" min="1">
+                <br>
+                <button onclick="revisar(numJugador1)" disabled id="btnIngresarJ1">Ingresar Jugador
+                    1</button>
+            </form>
+
+            <form action="">
+                <label for="numJugador2">Jugador 2</label>
+                <br>
+                <input max="1000" min="1" type="number" name="numJugador2" id="numJugador2" disabled>
+                <br>
+                <button onclick="revisar(numJugador2)" disabled id="btnIngresarJ2">Ingresar Jugador
+                    2</button>
+            </form>
+        </div>
+        <br>
+        <p id="mensaje"></p>
+
+    </div>
+    <!-- <p>Licencia GNU de codigo abierto</p> -->
+</body>
+
+</html>
