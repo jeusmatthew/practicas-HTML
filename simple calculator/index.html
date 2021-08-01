@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input class="memory" type="text" id="memory" readonly> 
+                <br>
+                <input type="text" id="screen" readonly value="0">
+                <br>
+                <button onclick="insertNumber(7)">7</button>    
+                <button onclick="insertNumber(8)">8</button> 
+                <button onclick="insertNumber(9)">9</button> 
+                <button onclick="operations('÷')"> ÷ </button>
+                <br>
+                <button onclick="insertNumber(4)">4</button>
+                <button onclick="insertNumber(5)">5</button>
+                <button onclick="insertNumber(6)">6</button>
+                <button onclick="operations('×')"> × </button>
+                <br>
+                <button onclick="insertNumber(1)">1</button>
+                <button onclick="insertNumber(2)">2</button>
+                <button onclick="insertNumber(3)">3</button>
+                <button onclick="operations('-')"> - </button>
+                <br>
+                <button onclick="insertNumber(0)">0</button>
+                <button onclick="clearr()">C</button>
+                <button onclick="result()"> = </button>
+                <button onclick="operations('+')"> + </button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
